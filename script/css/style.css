@@ -19,13 +19,20 @@
   font-size: 20px;
 }
 
-.navbar-custom .nav-item:hover {
-  color: #E69AE6;
-  opacity: 0.7;
+.navbar-custom .nav-item:hover .nav-link {
+  color: #ffc403;
 }
 
 .navbar-custom .nav-item.active .nav-link {
   color: #ffc403;
+}
+
+.navbar-custom .nav-item.dropdown .dropdown-menu {
+  display: none;
+}
+
+.navbar-custom .nav-item.dropdown.active:hover .dropdown-menu {
+  display: block;
 }
 
 .navbar-custom .navbar-toggler .navbar-toggler-icon {
