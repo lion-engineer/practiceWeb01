@@ -1,0 +1,55 @@
+@charset "UTF-8";
+* {
+  font-family: "微軟正黑體", arial;
+}
+
+.navbar-custom {
+  background-image: url(../img/header_bg.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.navbar-custom .nav-item {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.navbar-custom .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.navbar-custom .nav-item:hover {
+  color: #E69AE6;
+  opacity: 0.7;
+}
+
+.navbar-custom .nav-item.active .nav-link {
+  color: #ffc403;
+}
+
+.navbar-custom .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-color: #ffffff;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #805580;
+  margin-top: 20px;
+  height: 15vh;
+}
+
+.footer .footer-info {
+  padding: 10px 0;
+}
+
+.footer .footer-info .social-icon .fb {
+  width: 64px;
+  height: 64px;
+  display: block;
+  background-size: cover;
+  background-image: url(../img/FB.png);
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
