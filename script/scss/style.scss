@@ -5,6 +5,19 @@ $color-fourth:#805580;
 $color-white:#ffffff;
 
 
+@mixin breakpoint($point) {
+    @if $point == large {
+      @media (max-width: 991.98px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 767.98px) { @content; }
+    }
+    @else if $point == small {
+      @media (max-width: 575.98px)  { @content; }
+    }
+  }
+
+
 * {
     font-family: "微軟正黑體", arial;
 }
@@ -62,6 +75,10 @@ $color-white:#ffffff;
     background-color: $color-fourth;
     margin-top:20px;
     height: 15vh;
+
+    @include breakpoint(small) { 
+        height: 25vh;
+    }
 
     .footer-info{
         padding: 10px 0;

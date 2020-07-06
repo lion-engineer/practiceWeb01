@@ -47,6 +47,12 @@
   height: 15vh;
 }
 
+@media (max-width: 575.98px) {
+  .footer {
+    height: 25vh;
+  }
+}
+
 .footer .footer-info {
   padding: 10px 0;
 }
