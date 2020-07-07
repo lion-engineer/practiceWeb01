@@ -2,11 +2,34 @@ $color-master:#996699;
 $color-second:#ffc403;
 $color-third:#E69AE6;
 $color-fourth:#805580;
+$color-fifth:#ff722c;
 $color-white:#ffffff;
+$color-sixth:#ff7272;
+$color-gray:#f0efef;
+$color-black:#000000;
+
+
+@mixin breakpoint($point) {
+    @if $point == large {
+      @media (max-width: 992px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 720px) { @content; }
+    }
+    @else if $point == small {
+      @media (max-width: 576px)  { @content; }
+    }
+  }
 
 
 * {
     font-family: "微軟正黑體", arial;
+}
+
+body{
+    background: rgb(231,247,255);
+    background: linear-gradient(180deg, rgba(231,247,255,1) 0%, rgba(180,225,255,1) 78%, rgba(215,240,255,1) 100%);
+    background-repeat: no-repeat;
 }
 
 .navbar-custom{
@@ -40,10 +63,13 @@ $color-white:#ffffff;
         &.dropdown{
             .dropdown-menu{
                 display: none;
+                //opacity: 0;
+                transition: display 0s, 1s linear;
             }
-            &.active:hover{
+            &:hover{
                 .dropdown-menu{
                     display: block;
+                    //opacity: 1;
                 }
             }
         }
@@ -63,6 +89,10 @@ $color-white:#ffffff;
     margin-top:20px;
     height: 15vh;
 
+    @include breakpoint(small) { 
+        height: 25vh;
+    }
+
     .footer-info{
         padding: 10px 0;
 
@@ -76,6 +106,121 @@ $color-white:#ffffff;
                 background-repeat: no-repeat;
             }
             
+        }
+    }
+}
+
+.hot-card{
+    .title{
+        background-color: $color-third;
+        color: $color-white;
+        margin: 5px 5px;
+    }
+    .card-body{        
+        .text{
+            strong{
+                color: $color-fifth;
+                font-size: 1.2rem;
+            }
+        }
+        .price{
+            strong{
+                color: $color-sixth;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.block-title{
+    margin: 20px 0;
+}
+
+.notice-container{
+    background-color: $color-white;
+    h3{
+        font-weight: bolder;
+       padding: 20px 0;
+    }
+    ol{
+        li{           
+            padding-bottom: 20px;
+        }
+    };
+}
+
+.top-card{
+    cursor: pointer;
+    img{
+        height: 100%;
+    }
+    .card-body{
+        position: relative;
+        height: 100%;
+        .title{
+            padding-bottom: 10px;
+            border-bottom: 1px solid $color-fifth;
+            font-weight: 800;
+        }
+        .text{
+            padding: 15px 15px;
+            font-size: 16px;
+            strong{
+                color: $color-sixth;
+                font-size: 24px;
+            }
+        }
+        .price{
+           background-color: $color-second;
+           position: absolute;
+           right: 20px;
+           bottom: 20px;
+           border: 1px solid $color-white;
+           border-radius: 10px;
+           color: $color-white;
+           font-size: 18px;
+           //padding: 10px 20px;
+
+           @include breakpoint(medium) { 
+            right: 10px;
+            bottom: 5px;
+            font-size: 12px;
+            padding: 0 20px;
+           }
+
+           @include breakpoint(small) { 
+            right: 10px;
+            bottom: 5px;
+            font-size: 12px;
+            padding: 0 20px;
+           }
+           strong{
+            color: $color-sixth;
+            font-size: 24px;
+           }
+        }
+    }
+}
+
+.other-card{
+    cursor: pointer;
+    .card-header{
+        font-size: larger;
+        font-weight: 700;
+        a{
+            color: $color-black;
+        }
+    }
+    .card-body{
+        strong{
+            color: $color-fifth;
+            font-size: 24px;
+        }
+    }
+    .card-footer{
+        strong{
+            color: $color-fifth;
+            font-size: 24px;
         }
     }
 }
