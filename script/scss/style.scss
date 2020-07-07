@@ -61,10 +61,13 @@ body{
         &.dropdown{
             .dropdown-menu{
                 display: none;
+                //opacity: 0;
+                transition: display 0s, 1s linear;
             }
-            &.active:hover{
+            &:hover{
                 .dropdown-menu{
                     display: block;
+                    //opacity: 1;
                 }
             }
         }

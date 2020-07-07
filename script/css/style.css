@@ -36,9 +36,11 @@ body {
 
 .navbar-custom .nav-item.dropdown .dropdown-menu {
   display: none;
+  -webkit-transition: display 0s, 1s linear;
+  transition: display 0s, 1s linear;
 }
 
-.navbar-custom .nav-item.dropdown.active:hover .dropdown-menu {
+.navbar-custom .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
 
