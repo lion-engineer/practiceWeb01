@@ -3,6 +3,13 @@
   font-family: "微軟正黑體", arial;
 }
 
+body {
+  background: #e7f7ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7f7ff), color-stop(78%, #b4e1ff), to(#d7f0ff));
+  background: linear-gradient(180deg, #e7f7ff 0%, #b4e1ff 78%, #d7f0ff 100%);
+  background-repeat: no-repeat;
+}
+
 .navbar-custom {
   background-image: url(../img/header_bg.png);
   background-repeat: repeat-x;
@@ -40,6 +47,10 @@
   border-color: #ffffff;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .footer {
   color: #ffffff;
   background-color: #805580;
@@ -64,5 +75,25 @@
   background-size: cover;
   background-image: url(../img/FB.png);
   background-repeat: no-repeat;
+}
+
+.card .name {
+  background-color: #E69AE6;
+  color: #ffffff;
+  margin: 5px 5px;
+}
+
+.card .card-body .text strong {
+  color: #ff722c;
+  font-size: 1.2rem;
+}
+
+.card .card-body .price strong {
+  color: #ff7272;
+  font-size: 1.5rem;
+}
+
+.block-title {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */

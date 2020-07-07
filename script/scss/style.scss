@@ -2,7 +2,9 @@ $color-master:#996699;
 $color-second:#ffc403;
 $color-third:#E69AE6;
 $color-fourth:#805580;
+$color-fifth:#ff722c;
 $color-white:#ffffff;
+$color-sixth:#ff7272;
 
 
 @mixin breakpoint($point) {
@@ -20,6 +22,12 @@ $color-white:#ffffff;
 
 * {
     font-family: "微軟正黑體", arial;
+}
+
+body{
+    background: rgb(231,247,255);
+    background: linear-gradient(180deg, rgba(231,247,255,1) 0%, rgba(180,225,255,1) 78%, rgba(215,240,255,1) 100%);
+    background-repeat: no-repeat;
 }
 
 .navbar-custom{
@@ -70,6 +78,10 @@ $color-white:#ffffff;
     }
 }
 
+.bg-transparent{
+    background-color: transparent;
+}
+
 .footer{
     color: $color-white;
     background-color: $color-fourth;
@@ -95,4 +107,30 @@ $color-white:#ffffff;
             
         }
     }
+}
+
+.card{
+    .name{
+        background-color: $color-third;
+        color: $color-white;
+        margin: 5px 5px;
+    }
+    .card-body{        
+        .text{
+            strong{
+                color: $color-fifth;
+                font-size: 1.2rem;
+            }
+        }
+        .price{
+            strong{
+                color: $color-sixth;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.block-title{
+    margin: 20px 0;
 }
