@@ -5,17 +5,19 @@ $color-fourth:#805580;
 $color-fifth:#ff722c;
 $color-white:#ffffff;
 $color-sixth:#ff7272;
+$color-gray:#f0efef;
+$color-black:#000000;
 
 
 @mixin breakpoint($point) {
     @if $point == large {
-      @media (max-width: 991.98px) { @content; }
+      @media (max-width: 992px) { @content; }
     }
     @else if $point == medium {
-      @media (max-width: 767.98px) { @content; }
+      @media (max-width: 720px) { @content; }
     }
     @else if $point == small {
-      @media (max-width: 575.98px)  { @content; }
+      @media (max-width: 576px)  { @content; }
     }
   }
 
@@ -81,10 +83,6 @@ body{
     }
 }
 
-.bg-transparent{
-    background-color: transparent;
-}
-
 .footer{
     color: $color-white;
     background-color: $color-fourth;
@@ -112,8 +110,8 @@ body{
     }
 }
 
-.card{
-    .name{
+.hot-card{
+    .title{
         background-color: $color-third;
         color: $color-white;
         margin: 5px 5px;
@@ -136,4 +134,93 @@ body{
 
 .block-title{
     margin: 20px 0;
+}
+
+.notice-container{
+    background-color: $color-white;
+    h3{
+        font-weight: bolder;
+       padding: 20px 0;
+    }
+    ol{
+        li{           
+            padding-bottom: 20px;
+        }
+    };
+}
+
+.top-card{
+    cursor: pointer;
+    img{
+        height: 100%;
+    }
+    .card-body{
+        position: relative;
+        height: 100%;
+        .title{
+            padding-bottom: 10px;
+            border-bottom: 1px solid $color-fifth;
+            font-weight: 800;
+        }
+        .text{
+            padding: 15px 15px;
+            font-size: 16px;
+            strong{
+                color: $color-sixth;
+                font-size: 24px;
+            }
+        }
+        .price{
+           background-color: $color-second;
+           position: absolute;
+           right: 20px;
+           bottom: 20px;
+           border: 1px solid $color-white;
+           border-radius: 10px;
+           color: $color-white;
+           font-size: 18px;
+           //padding: 10px 20px;
+
+           @include breakpoint(medium) { 
+            right: 10px;
+            bottom: 5px;
+            font-size: 12px;
+            padding: 0 20px;
+           }
+
+           @include breakpoint(small) { 
+            right: 10px;
+            bottom: 5px;
+            font-size: 12px;
+            padding: 0 20px;
+           }
+           strong{
+            color: $color-sixth;
+            font-size: 24px;
+           }
+        }
+    }
+}
+
+.other-card{
+    cursor: pointer;
+    .card-header{
+        font-size: larger;
+        font-weight: 700;
+        a{
+            color: $color-black;
+        }
+    }
+    .card-body{
+        strong{
+            color: $color-fifth;
+            font-size: 24px;
+        }
+    }
+    .card-footer{
+        strong{
+            color: $color-fifth;
+            font-size: 24px;
+        }
+    }
 }

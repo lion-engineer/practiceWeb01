@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/fontawesome-free-5.13.1-web/css/all.min.css">
     <link rel="stylesheet" href="dist/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="script/css/style.css">
 
+
+    <script defer src="dist/fontawesome-free-5.13.1-web/js/all.min.js"></script>
     <title>2020安心旅遊補助，住宿最高省2000元！ - 【可樂旅遊 - 康福旅行社】</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header sticky-top">
             <div class="container-fluid px-0">
-                <nav class="navbar navbar-custom sticky-top navbar-expand-lg">
+                <nav class="navbar navbar-custom navbar-expand-lg">
                     <a href="/" class="brand">
                         <img src="script/img/header_logo2.png" class="d-inline-block align-top" alt="">
                     </a>
@@ -38,9 +41,9 @@
                                 <a class="nav-link" href="#">國內旅遊<span class="sr-only">(current)</span></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#hot">熱銷推薦</a>
-                                    <a class="dropdown-item" href="#">東台灣</a>
-                                    <a class="dropdown-item" href="#">離島</a>
-                                    <a class="dropdown-item" href="#">注意事項</a>
+                                    <a class="dropdown-item" href="#eastTaiwan">東台灣</a>
+                                    <a class="dropdown-item" href="#island">離島</a>
+                                    <a class="dropdown-item" href="#notice">注意事項</a>
                                 </div>
                             </li>
                         </ul>
@@ -49,40 +52,183 @@
             </div>
         </header>
         <main class="main">
+            <!--Banner-->
             <div class="jumbotron jumbotron-fluid bg-transparent">
                 <div class="container text-center">
                     <img src="script/img/logo.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
+            <!--熱門推薦-->
             <div class="hot-promt jumbotron jumbotron-fluid bg-transparent">
                 <div class="container text-center">
                     <img id="hot" src="script/img/title1.png" class="img-fluid block-title" alt="Responsive image">
                     <div class="row mx-auto owl-carousel owl-theme js-owl-carousel-hot">
-                        <div class="card item">
+                        <div class="card hot-card item">
                             <img src="script/img/p1.jpg" class="img-thumbnail" alt="花蓮政大民宿自由行3日">
-                            <div class="name">花蓮政大民宿自由行3日</div>
+                            <div class="title">花蓮政大民宿自由行3日</div>
                             <div class="card-body text-left">
                                 <p class="text"><strong>秋冬補助每房折1000</strong><br>買一送一！第二人免費玩<br>加碼火車免費升等立榮航空</p>
                                 <p class="price">兩人<strong>2,999</strong>起</p>
                             </div>
                         </div>
-                        <div class="card item">
+                        <div class="card hot-card item">
                             <img src="script/img/p2.jpg" class="img-thumbnail" alt="愛玩澎湖．擁抱海洋自由行3日">
-                            <div class="name">愛玩澎湖．擁抱海洋自由行3日</div>
+                            <div class="title">愛玩澎湖．擁抱海洋自由行3日</div>
                             <div class="card-body text-left">
                                 <p class="text"><strong>秋冬補助每房折1000</strong><br>買一送一！第二人免費玩<br>加碼火車免費升等立榮航空</p>
                                 <p class="price">兩人<strong>1,999</strong>起</p>
                             </div>
                         </div>
-                        <div class="card item">
+                        <div class="card hot-card item">
                             <img src="script/img/p8.jpg" class="img-thumbnail" alt="台東旅人驛站自由行3日">
-                            <div class="name">台東旅人驛站自由行3日</div>
+                            <div class="title">台東旅人驛站自由行3日</div>
                             <div class="card-body text-left">
                                 <p class="text"><strong>秋冬補助每房折1000</strong><br>買一送一！第二人免費玩<br>加碼火車免費升等立榮航空</p>
                                 <p class="price">兩人<strong>2,280</strong>起</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!--東台灣-->
+            <div class="jumbotron jumbotron-fluid bg-transparent">
+                <div class="container text-center">
+                    <img id="eastTaiwan" src="script/img/title4.png" class="img-fluid block-title" alt="東台灣">
+                    <div class="card mb-3 top-card">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="script/img/ph1.jpg" class="card-img img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="title">花蓮怡園自由行3日</h5>
+                                    <p class="text text-left"><strong>秋冬補助每房折1000</strong><br>
+                                        北中高出發，火車來回
+                                        <br>入住怡園渡假村含早餐</p>
+                                    <a class="price btn btn-lg text-right">每人<strong>1,999</strong>元起</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <div class="card mb-3 other-card" onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                                <div class="card-header bg-transparent">花蓮秋遊在地風情2日</a></div>
+                                <div class="card-body">
+                                    <ul class="text-left">
+                                        <li><strong> 秋冬補助每房折1000</strong></li>
+                                        <li>台北、台中出發，火車來回</li>
+                                        <li>花蓮秋遊行程五選一</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-transparent">每人<strong>2,999</strong>起</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                                <div class="card-header bg-transparent">花蓮秋遊在地風情3日</div>
+                                <div class="card-body">
+                                    <ul class="text-left">
+                                        <li><strong> 秋冬補助每房折1000</strong></li>
+                                        <li>北中高出發，火車來回</li>
+                                        <li>花蓮秋遊行程五選一</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-transparent">每人<strong>3,999</strong>起</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                                <div class="card-header bg-transparent">花蓮IWS租車自駕暢遊2日</div>
+                                <div class="card-body">
+                                    <ul class="text-left">
+                                        <li><strong> 秋冬補助每房折1000</strong></li>
+                                        <li>北中高出發，火車來回</li>
+                                        <li>房車36小時使用(花蓮租還)</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-transparent">每人<strong>2,499</strong>起</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                                <div class="card-header bg-transparent">花蓮IWS租車自駕暢遊3日</div>
+                                <div class="card-body">
+                                    <ul class="text-left">
+                                        <li><strong> 秋冬補助每房折1000</strong></li>
+                                        <li>北中高出發，火車來回</li>
+                                        <li>房車36小時使用(花蓮租還)</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-transparent">每人<strong>2,999</strong>起</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                                <div class="card-header bg-transparent">花蓮經典自由行2日</div>
+                                <div class="card-body">
+                                    <ul class="text-left">
+                                        <li><strong> 秋冬補助每房折1000</strong></li>
+                                        <li>松山出發，立榮來回</li>
+                                        <li>入住花蓮經典假日飯店含早餐</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-transparent">每人<strong>1,999</strong>起</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--離島-->
+            <div class="jumbotron jumbotron-fluid bg-transparent">
+                <div class="container text-center">
+                    <img id="island" src="script/img/title5.png" class="img-fluid block-title" alt="離島">
+                    <div class="card mb-3 top-card">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="script/img/ph2.jpg" class="card-img img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="title">好禮1+1．海洋蝦蝦自由行3日</h5>
+                                    <p class="text text-left"><strong>秋冬補助每房折1000</strong><br>
+                                        松山出發，飛機來回
+                                        <br>送秋蟹大蝦海鮮鍋+住海景鞦韆房</p>
+                                    <a class="price btn text-right">每人<strong>3,599</strong>元起</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                                <div class="card-header bg-transparent">綠島輕鬆小資自由行2日</div>
+                                <div class="card-body">
+                                    <ul class="text-left">
+                                        <li><strong> 秋冬補助每房折1000</strong></li>
+                                        <li>富岡碼頭集合</li>
+                                        <li>機車24小時使用+綠島活動3選1+夜遊</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-transparent">每人<strong>2,150</strong>起</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--注意事項-->
+            <div class="jumbotron jumbotron-fluid bg-transparent">
+                <div class="container text-center notice-container">
+                    <h3 id="notice"><i class="fa fa-angle-double-right" aria-hidden="true"></i>注意事項<i
+                            class="fa fa-angle-double-left" aria-hidden="true"></i></h3>
+                    <ol class="text-left">
+                        <li>國內旅遊推出之『秋冬補助案』系列商品，每個房間每個晚上都需要一位尚未申請過秋冬補助的旅客，請於飯店現場出示身分證件，由飯店人員協助登錄相關資料，如現場登入時確認不符合補助資格，需要在飯店現場補收每房每晚1000元費用，方可入住，請務必確認證件及是否已使用補助名額。
+                        </li>
+                        <li>國內旅遊商品售價皆為已折抵補助優惠之價格，飯店現場不在另退費用，敬請悉知。</li>
+                        <li>政府補助優惠商品，補助期間自2019/10/15起至2019/12/28止。如政府補助經費用罄時，即停止補助，旅客需現場補足房費，每人每晚1000元費用。</li>
+                        <li>非本國籍旅客不適用此補助專案商品。</li>
+                        <li>詳細規定請洽：<a href="https://fallwintertour.tbroc.gov.tw/" target="_blank">台灣旅宿網</a>補助登入網頁</li>
+                    </ol>
                 </div>
             </div>
         </main>

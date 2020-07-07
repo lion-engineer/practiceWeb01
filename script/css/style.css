@@ -49,10 +49,6 @@ body {
   border-color: #ffffff;
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .footer {
   color: #ffffff;
   background-color: #805580;
@@ -60,7 +56,7 @@ body {
   height: 15vh;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .footer {
     height: 25vh;
   }
@@ -79,23 +75,122 @@ body {
   background-repeat: no-repeat;
 }
 
-.card .name {
+.hot-card .title {
   background-color: #E69AE6;
   color: #ffffff;
   margin: 5px 5px;
 }
 
-.card .card-body .text strong {
+.hot-card .card-body .text strong {
   color: #ff722c;
   font-size: 1.2rem;
 }
 
-.card .card-body .price strong {
+.hot-card .card-body .price strong {
   color: #ff7272;
   font-size: 1.5rem;
 }
 
 .block-title {
   margin: 20px 0;
+}
+
+.notice-container {
+  background-color: #ffffff;
+}
+
+.notice-container h3 {
+  font-weight: bolder;
+  padding: 20px 0;
+}
+
+.notice-container ol li {
+  padding-bottom: 20px;
+}
+
+.top-card {
+  cursor: pointer;
+}
+
+.top-card img {
+  height: 100%;
+}
+
+.top-card .card-body {
+  position: relative;
+  height: 100%;
+}
+
+.top-card .card-body .title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ff722c;
+  font-weight: 800;
+}
+
+.top-card .card-body .text {
+  padding: 15px 15px;
+  font-size: 16px;
+}
+
+.top-card .card-body .text strong {
+  color: #ff7272;
+  font-size: 24px;
+}
+
+.top-card .card-body .price {
+  background-color: #ffc403;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  .top-card .card-body .price {
+    right: 10px;
+    bottom: 5px;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-card .card-body .price {
+    right: 10px;
+    bottom: 5px;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
+
+.top-card .card-body .price strong {
+  color: #ff7272;
+  font-size: 24px;
+}
+
+.other-card {
+  cursor: pointer;
+}
+
+.other-card .card-header {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.other-card .card-header a {
+  color: #000000;
+}
+
+.other-card .card-body strong {
+  color: #ff722c;
+  font-size: 24px;
+}
+
+.other-card .card-footer strong {
+  color: #ff722c;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */
