@@ -171,6 +171,11 @@ body {
   font-size: 24px;
 }
 
+.top-card:hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .other-card {
   cursor: pointer;
 }
@@ -192,5 +197,10 @@ body {
 .other-card .card-footer strong {
   color: #ff722c;
   font-size: 24px;
+}
+
+.other-card:hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
