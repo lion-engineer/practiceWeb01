@@ -94,7 +94,7 @@
             <div class="jumbotron jumbotron-fluid bg-transparent">
                 <div class="container text-center">
                     <img id="eastTaiwan" src="script/img/title4.png" class="img-fluid block-title" alt="東台灣">
-                    <div class="card mb-3 top-card">
+                    <div class="card mb-3 top-card" data-href="https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="script/img/ph1.jpg" class="card-img img-thumbnail" alt="...">
@@ -112,7 +112,8 @@
                     </div>
                     <div class="row row-cols-1 row-cols-md-2">
                         <div class="col">
-                            <div class="card mb-3 other-card" onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                            <div class="card mb-3 other-card"
+                                onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
                                 <div class="card-header bg-transparent">花蓮秋遊在地風情2日</a></div>
                                 <div class="card-body">
                                     <ul class="text-left">
@@ -125,7 +126,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                            <div class="card mb-3 other-card"
+                                onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
                                 <div class="card-header bg-transparent">花蓮秋遊在地風情3日</div>
                                 <div class="card-body">
                                     <ul class="text-left">
@@ -138,7 +140,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                            <div class="card mb-3 other-card"
+                                onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
                                 <div class="card-header bg-transparent">花蓮IWS租車自駕暢遊2日</div>
                                 <div class="card-body">
                                     <ul class="text-left">
@@ -151,7 +154,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                            <div class="card mb-3 other-card"
+                                onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
                                 <div class="card-header bg-transparent">花蓮IWS租車自駕暢遊3日</div>
                                 <div class="card-body">
                                     <ul class="text-left">
@@ -164,7 +168,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                            <div class="card mb-3 other-card"
+                                onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
                                 <div class="card-header bg-transparent">花蓮經典自由行2日</div>
                                 <div class="card-body">
                                     <ul class="text-left">
@@ -183,7 +188,7 @@
             <div class="jumbotron jumbotron-fluid bg-transparent">
                 <div class="container text-center">
                     <img id="island" src="script/img/title5.png" class="img-fluid block-title" alt="離島">
-                    <div class="card mb-3 top-card">
+                    <div class="card mb-3 top-card" data-href="https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="script/img/ph2.jpg" class="card-img img-thumbnail" alt="...">
@@ -201,7 +206,8 @@
                     </div>
                     <div class="row row-cols-1 row-cols-md-2">
                         <div class="col">
-                            <div class="card mb-3 other-card"  onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
+                            <div class="card mb-3 other-card"
+                                onclick="window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx')">
                                 <div class="card-header bg-transparent">綠島輕鬆小資自由行2日</div>
                                 <div class="card-body">
                                     <ul class="text-left">
@@ -255,7 +261,7 @@
                 loop: true,
                 margin: 10,
                 nav: true,
-                autoplay:true,
+                autoplay: true,
                 responsive: {
                     0: {
                         items: 1,
@@ -267,7 +273,14 @@
                         loop: false
                     }
                 }
+            });
+            $('.js-owl-carousel-hot').on('click', '.item', function() {
+                window.open('https://www.colatour.com.tw/C000_Portal/C000_HP06_Main.aspx');
             })
+            $('.top-card').on('click', function(){
+                let url = $(this).data('href');
+                window.open(url);
+            });
         })
     </script>
 </body>
