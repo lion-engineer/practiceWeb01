@@ -75,6 +75,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.hot-card {
+  cursor: pointer;
+}
+
 .hot-card .title {
   background-color: #E69AE6;
   color: #ffffff;

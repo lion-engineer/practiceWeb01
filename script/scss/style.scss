@@ -111,6 +111,7 @@ body{
 }
 
 .hot-card{
+    cursor: pointer;
     .title{
         background-color: $color-third;
         color: $color-white;
